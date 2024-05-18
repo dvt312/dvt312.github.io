@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa de Viaje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffe4e1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .section {
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #ff69b4;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .reveal {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Descubre un Destino Maravilloso</h1>
+        <h2>Una Aventura Inolvidable nos Espera</h2>
+        <p>Querida Claudia, te invito a descubrir uno de los destinos más hermosos y vibrantes del mundo. Un lugar donde la historia, la cultura y las playas paradisiacas se encuentran para ofrecerte unas vacaciones de ensueño.</p>
+    </div>
+
+    <div class="section">
+        <h3>Historia y Cultura</h3>
+        <p>Este destino es conocido por su rica historia y cultura vibrante. Podrás caminar por sus calles empedradas, admirar su arquitectura colonial y visitar sitios históricos que te transportarán a otra época.</p>
+        <img src="https://www.example.com/imagen-historia.jpg" alt="Imagen de historia y cultura">
+    </div>
+
+    <div class="section">
+        <h3>Playas Paradisiacas</h3>
+        <p>Imagínate relajándote en playas de arena blanca y aguas cristalinas. Este lugar es perfecto para disfrutar del sol, nadar y hacer snorkel en algunos de los arrecifes de coral más hermosos del mundo.</p>
+        <img src="https://www.example.com/imagen-playa.jpg" alt="Imagen de una playa paradisíaca">
+    </div>
+
+    <div class="section">
+        <h3>Gastronomía Exquisita</h3>
+        <p>La comida en este destino es simplemente deliciosa. Podrás degustar platos tradicionales llenos de sabor y frescura, acompañados de la hospitalidad de su gente.</p>
+        <img src="https://www.example.com/imagen-gastronomia.jpg" alt="Imagen de gastronomía local">
+    </div>
+
+    <div class="section">
+        <h3>Aventuras y Actividades</h3>
+        <p>Desde deportes acuáticos hasta excursiones en la naturaleza, este destino ofrece una amplia variedad de actividades para todos los gustos. Cada día será una nueva oportunidad para explorar y disfrutar.</p>
+        <img src="https://www.example.com/imagen-aventura.jpg" alt="Imagen de actividades y aventuras">
+    </div>
+
+    <div class="section">
+        <h3>Relájate y Disfruta</h3>
+        <p>Además de toda la diversión, también habrá momentos para relajarse y descansar en un ambiente tranquilo y acogedor. Es el lugar perfecto para desconectar y recargar energías.</p>
+        <img src="https://www.example.com/imagen-relax.jpg" alt="Imagen de relajación">
+    </div>
+
+    <div class="section reveal" id="reveal">
+        <h2>¡Sorpresa, Claudia!</h2>
+        <p>En agosto del 2024, nosotros junto a nuestra hermosa bebé Guadalupe, vamos a disfrutar de unas increíbles vacaciones en Cartagena, Colombia.</p>
+        <p>Empieza a hacer tus maletas, ¡la aventura nos espera!</p>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const revealSection = document.getElementById('reveal');
+
+        const revealOnScroll = () => {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+
+            if (revealSection.getBoundingClientRect().top < triggerBottom) {
+                revealSection.classList.add('visible');
+            }
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Initial check
+        revealOnScroll();
+    </script>
+</body>
+</html>
