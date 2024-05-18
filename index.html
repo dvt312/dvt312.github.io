@@ -53,6 +53,24 @@
             text-align: center;
             border-radius: 10px;
             margin-top: 30px;
+            display: none;
+        }
+        .reveal-button {
+            background-color: #ff1493;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .reveal-button:hover {
+            background-color: #ff69b4;
         }
     </style>
 </head>
@@ -60,51 +78,52 @@
     <div class="section">
         <h1>Descubre un Destino Maravilloso</h1>
         <h2>Una Aventura Inolvidable nos Espera</h2>
-        <p>Querida Claudia, te invito a descubrir uno de los destinos más hermosos y vibrantes del mundo. Un lugar donde la historia, la cultura y las playas paradisiacas se encuentran para ofrecerte unas vacaciones de ensueño.</p>
+        <p>Ha llegado el día de celebrar tu vida, de festejar un año más de vida y de compartirlo juntos, en familia. Espero que cumplas muchisimos más y que siempre podamos compartirlos juntos Te amo demasiado y nunca olvides que hoy y siempre voy a querer que seas la mujer más feliz del mundo.</p>
+        <p>Celebro tu vida, tu alegría, tu amor, tu forma de ser, tu rol de madre, lo gran esposa que eres y celebro que podamos compartir cada día nuestras vidas.</p>
+        <p>Mi Amor te invito a desconectarnos, descansar y pasar un momento inolvidable junto nuestra bebita. Un lugar donde la historia, la cultura y las playas se encuentran para ofrecerte unas vacaciones espectaculares.</p>
     </div>
 
     <div class="section">
         <h3>Historia y Cultura</h3>
         <p>Este destino es conocido por su rica historia y cultura vibrante. Podrás caminar por sus calles empedradas, admirar su arquitectura colonial y visitar sitios históricos que te transportarán a otra época.</p>
-        <img src="https://www.example.com/imagen-historia.jpg" alt="Imagen de historia y cultura">
+        <img src="https://www.eluniversal.com.co/binrepository/672x448/0c0/0d0/none/13704/XUDR/danza_2847872_20200309120634.jpg" alt="Imagen de historia y cultura">
     </div>
 
     <div class="section">
-        <h3>Playas Paradisiacas</h3>
-        <p>Imagínate relajándote en playas de arena blanca y aguas cristalinas. Este lugar es perfecto para disfrutar del sol, nadar y hacer snorkel en algunos de los arrecifes de coral más hermosos del mundo.</p>
-        <img src="https://www.example.com/imagen-playa.jpg" alt="Imagen de una playa paradisíaca">
+        <h3>Sol, Playa y Arena</h3>
+        <p>Imagínate relajándote en playas deliciosas y aguas tranquilas. Este lugar es perfecto para disfrutar del sol, del mar y de la vida.</p>
+        <img src="https://cdn.yate.co/img/blog/2023/7/playa-blanca-baru-0d5.jpg" alt="Imagen de una playa">
     </div>
 
     <div class="section">
         <h3>Gastronomía Exquisita</h3>
         <p>La comida en este destino es simplemente deliciosa. Podrás degustar platos tradicionales llenos de sabor y frescura, acompañados de la hospitalidad de su gente.</p>
-        <img src="https://www.example.com/imagen-gastronomia.jpg" alt="Imagen de gastronomía local">
-    </div>
-
-    <div class="section">
-        <h3>Aventuras y Actividades</h3>
-        <p>Desde deportes acuáticos hasta excursiones en la naturaleza, este destino ofrece una amplia variedad de actividades para todos los gustos. Cada día será una nueva oportunidad para explorar y disfrutar.</p>
-        <img src="https://www.example.com/imagen-aventura.jpg" alt="Imagen de actividades y aventuras">
+        <img src="https://media.viajando.travel/p/357814ee2eea796d43d24677ca5b3efc/adjuntos/236/imagenes/000/510/0000510633/1200x0/smart/coctel-camarones.jpg" alt="Imagen de gastronomía local">
     </div>
 
     <div class="section">
         <h3>Relájate y Disfruta</h3>
         <p>Además de toda la diversión, también habrá momentos para relajarse y descansar en un ambiente tranquilo y acogedor. Es el lugar perfecto para desconectar y recargar energías.</p>
-        <img src="https://www.example.com/imagen-relax.jpg" alt="Imagen de relajación">
+        <img src="https://albitourscartagena.com/wp-content/uploads/2023/07/Namaste-Relax-03-min.jpg" alt="Imagen de relajación">
     </div>
 
-    <div class="section reveal" id="reveal">
-        <h2>¡Sorpresa, Claudia!</h2>
-        <p>En agosto del 2024, nosotros junto a nuestra hermosa bebé Guadalupe, vamos a disfrutar de unas increíbles vacaciones en Cartagena, Colombia.</p>
-        <p>Empieza a hacer tus maletas, ¡la aventura nos espera!</p>
+    <div class="section">
+        <div class="reveal-button" onclick="revealSurprise()">Descubre el Destino</div>
+        <div class="reveal" id="reveal">
+            <h2 style="color: white">¡Sorpresa, Mi Amor!</h2>
+            <h3 style="color: white">¡Feliz Cumpleaños Esposa Hermosa!</h3>
+            <p>En Agosto 16 - 19 del 2024, junto a nuestra hermosa bebé Guadalupe, vamos a disfrutar de unas increíbles vacaciones en Cartagena de Indias.</p>
+            <p>Empieza a hacer tus maletas, ¡la aventura nos espera!</p>
+        </div>
     </div>
 
     <script>
         const sections = document.querySelectorAll('.section');
         const revealSection = document.getElementById('reveal');
+        const revealButton = document.querySelector('.reveal-button');
 
         const revealOnScroll = () => {
-            const triggerBottom = window.innerHeight / 5 * 4;
+            const triggerBottom = window.innerHeight / 5 * 5;
 
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
@@ -115,16 +134,20 @@
                     section.classList.remove('visible');
                 }
             });
-
-            if (revealSection.getBoundingClientRect().top < triggerBottom) {
-                revealSection.classList.add('visible');
-            }
         };
 
         window.addEventListener('scroll', revealOnScroll);
 
         // Initial check
         revealOnScroll();
+
+        function revealSurprise() {
+            revealSection.style.display = 'block';
+            revealButton.style.display = 'none';
+            setTimeout(() => {
+                revealSection.classList.add('visible');
+            }, 100); // slight delay to trigger CSS transition
+        }
     </script>
 </body>
 </html>
