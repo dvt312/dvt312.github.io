@@ -284,29 +284,29 @@
         }
 
         // Touch events for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
+        <!-- let touchStartX = 0; -->
+        <!-- let touchEndX = 0; -->
 
-        function handleTouchStart(e) {
-            touchStartX = e.changedTouches[0].screenX;
-        }
+        <!-- function handleTouchStart(e) { -->
+            <!-- touchStartX = e.changedTouches[0].screenX; -->
+        <!-- } -->
 
-        function handleTouchMove(e) {
-            touchEndX = e.changedTouches[0].screenX;
-        }
+        <!-- function handleTouchMove(e) { -->
+            <!-- touchEndX = e.changedTouches[0].screenX; -->
+        <!-- } -->
 
-        function handleTouchEnd() {
-            if (touchEndX < touchStartX) {
-                plusSlides(1); // swipe left, go to next slide
-            } 
-            if (touchEndX > touchStartX) {
-                plusSlides(-1); // swipe right, go to previous slide
-            }
-        }
+        <!-- function handleTouchEnd() { -->
+            <!-- if (touchEndX < touchStartX) { -->
+                <!-- plusSlides(1); // swipe left, go to next slide -->
+            <!-- }  -->
+            <!-- if (touchEndX > touchStartX) { -->
+                <!-- plusSlides(-1); // swipe right, go to previous slide -->
+            <!-- } -->
+        <!-- } -->
 
-        document.querySelector('.slideshow-container').addEventListener('touchstart', handleTouchStart, false);
-        document.querySelector('.slideshow-container').addEventListener('touchmove', handleTouchMove, false);
-        document.querySelector('.slideshow-container').addEventListener('touchend', handleTouchEnd, false);
+        <!-- document.querySelector('.slideshow-container').addEventListener('touchstart', handleTouchStart, false); -->
+        <!-- document.querySelector('.slideshow-container').addEventListener('touchmove', handleTouchMove, false); -->
+        <!-- document.querySelector('.slideshow-container').addEventListener('touchend', handleTouchEnd, false); -->
     </script>
 </body>
 </html>
