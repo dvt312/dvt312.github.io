@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorpresa de Viaje</title>
+    <title>Sorpresa!!! ♥</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -72,6 +72,64 @@
         .reveal-button:hover {
             background-color: #ff69b4;
         }
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
     </style>
 </head>
 <body>
@@ -106,7 +164,55 @@
         <p>Además de toda la diversión, también habrá momentos para relajarse y descansar en un ambiente tranquilo y acogedor. Es el lugar perfecto para desconectar y recargar energías.</p>
         <img src="https://albitourscartagena.com/wp-content/uploads/2023/07/Namaste-Relax-03-min.jpg" alt="Imagen de relajación">
     </div>
-
+    
+    <div class="section slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="content/img/1.jpeg" style="width:100%" alt="Slide 1">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="content/img/2.jpeg" style="width:100%" alt="Slide 2">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="content/img/3.jpeg" style="width:100%" alt="Slide 3">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="content/img/4.jpeg" style="width:100%" alt="Slide 4">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="content/img/5.jpeg" style="width:100%" alt="Slide 5">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="content/img/6.jpeg" style="width:100%" alt="Slide 6">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="content/img/7.jpeg" style="width:100%" alt="Slide 7">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="content/img/8.jpeg" style="width:100%" alt="Slide 8">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+    <br />
     <div class="section">
         <div class="reveal-button" onclick="revealSurprise()">Descubre el Destino</div>
         <div class="reveal" id="reveal">
@@ -116,14 +222,15 @@
             <p>Empieza a hacer tus maletas, ¡la aventura nos espera!</p>
         </div>
     </div>
-
+    <br />
+    <br />
     <script>
         const sections = document.querySelectorAll('.section');
         const revealSection = document.getElementById('reveal');
         const revealButton = document.querySelector('.reveal-button');
 
         const revealOnScroll = () => {
-            const triggerBottom = window.innerHeight / 5 * 5;
+            const triggerBottom = window.innerHeight / 5 * 6;
 
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
@@ -148,6 +255,58 @@
                 revealSection.classList.add('visible');
             }, 100); // slight delay to trigger CSS transition
         }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Touch events for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleTouchStart(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchMove(e) {
+            touchEndX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd() {
+            if (touchEndX < touchStartX) {
+                plusSlides(1); // swipe left, go to next slide
+            } 
+            if (touchEndX > touchStartX) {
+                plusSlides(-1); // swipe right, go to previous slide
+            }
+        }
+
+        document.querySelector('.slideshow-container').addEventListener('touchstart', handleTouchStart, false);
+        document.querySelector('.slideshow-container').addEventListener('touchmove', handleTouchMove, false);
+        document.querySelector('.slideshow-container').addEventListener('touchend', handleTouchEnd, false);
     </script>
 </body>
 </html>
