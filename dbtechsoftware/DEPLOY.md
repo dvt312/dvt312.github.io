@@ -104,6 +104,6 @@ Solo sigues pagando la renovación anual del dominio con tu registrador actual.
 - **Logo:** en `index.html` busca el comentario `LOGO:` y reemplaza el `<svg>` por `<img src="logo.svg" class="brand-mark" alt="">`. Haz lo mismo en el footer y pon el archivo `logo.svg` junto a `index.html`. El favicon está en `favicon.svg`.
 - **Textos en español:** edítalos directamente en el HTML.
 - **Textos en inglés:** edítalos en el objeto `EN` de `assets/js/app.js`, con la misma clave `data-i18n`.
-- **Colores de los temas:** variables al inicio de `assets/css/styles.css` (`[data-theme="light"]`, `dark`, `ocean`, `sunset`).
+- **Colores de los temas:** variables al inicio de `assets/css/styles.css` (`[data-theme="dark"]` Neón, `light` Claro, `cyber` Cyberpunk y `matrix` Matrix). El tema por defecto es Neón; se cambia en `assets/js/theme-init.js`.
 - **Regla de seguridad:** no agregues `<script>` ni `style="…"` dentro del HTML; la CSP los bloquea. Pon todo en `assets/`.
 - **Contenido de ejemplo:** las cifras, los clientes, los casos y los testimonios son inventados. Cámbialos por datos reales antes de lanzar o en cuanto los tengas.

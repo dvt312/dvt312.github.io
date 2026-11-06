@@ -1,39 +1,44 @@
 <!doctype html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DB Tech Software | Desarrollo de software a la medida en Colombia</title>
-<meta name="description" content="DB Tech Software diseña, desarrolla y opera software a la medida: aplicaciones web, móviles, cloud, integraciones e inteligencia artificial. Empresa de software en Colombia.">
-<meta name="theme-color" content="#f7f8fc">
+<title>DB Tech Software | Software e Inteligencia Artificial a la medida · Colombia</title>
+<meta name="description" content="DB Tech Software es una empresa de software AI-native en Colombia: agentes de IA, IA generativa con tus datos, desarrollo web y móvil, cloud y LLMOps, con workflows de ingeniería potenciados por IA.">
+<meta name="theme-color" content="#05060f">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://dbtechsoftware.com/">
 <link rel="alternate" hreflang="es" href="https://dbtechsoftware.com/?lang=es">
 <link rel="alternate" hreflang="en" href="https://dbtechsoftware.com/?lang=en">
 <meta property="og:type" content="website">
-<meta property="og:title" content="DB Tech Software">
-<meta property="og:description" content="Software a la medida que impulsa tu negocio. Hecho en Colombia.">
+<meta property="og:title" content="DB Tech Software · AI-native software company">
+<meta property="og:description" content="Construimos software inteligente con IA. Agentes, IA generativa, web, móvil y cloud. Hecho en Colombia.">
 <meta property="og:url" content="https://dbtechsoftware.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-
-<script src="assets/js/theme-init.js"></script>
-
 <link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/theme-init.js"></script>
 </head>
 <body>
 
 <!-- ===================== SPRITE DE ICONOS ===================== -->
 <svg class="sprite" aria-hidden="true">
   <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
   <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v4a6 6 0 0 1-12 0V8Z"/></symbol>
   <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8Z"/></symbol>
-  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><path d="M9 13v1M15 13v1"/><path d="M2 13v3M22 13v3"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.2A3 3 0 0 0 4.5 8a3 3 0 0 0 .3 4.9A3 3 0 0 0 7 18a3 3 0 0 0 5 1.5V4.5A2.5 2.5 0 0 0 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v.2A3 3 0 0 1 19.5 8a3 3 0 0 1-.3 4.9A3 3 0 0 1 17 18a3 3 0 0 1-5 1.5"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 8-2 6-6 2 2-6Z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/><path d="M8 9h8M8 13h5"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
   <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
@@ -43,14 +48,24 @@
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
   <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2Z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0"/><path d="M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
-  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A6 6 0 1 0 7.5 11.5c.7.7 1.2 1.5 1.4 2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10"/><path d="M3 7h18"/><path d="m6 7-3 7a3 3 0 0 0 6 0Z"/><path d="m18 7-3 7a3 3 0 0 0 6 0Z"/></symbol>
+  <symbol id="i-human" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+  <symbol id="i-test" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4 19a2 2 0 0 0 1.7 3h12.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></symbol>
   <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
   <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
-  <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.150-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.6-8.4Z"/></symbol>
 </svg>
+
+<!-- Fondo animado: red neuronal de partículas -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
 
 <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 
@@ -61,20 +76,21 @@
       <!-- LOGO: reemplaza este <svg> por <img src="logo.svg" class="brand-mark" alt=""> con el logo oficial -->
       <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
         <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="lg-a"/><stop offset="1" class="lg-b"/></linearGradient></defs>
-        <rect width="64" height="64" rx="16" fill="url(#lg)"/>
-        <path d="M14 22 7 32l7 10M50 22l7 10-7 10" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
-        <text x="32" y="41" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="-1">DB</text>
+        <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#lg)" stroke-width="3"/>
+        <path d="M15 22 8 32l7 10M49 22l7 10-7 10" stroke="url(#lg)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="32" y="41" class="brand-mark-text" text-anchor="middle">DB</text>
       </svg>
-      <span>DB Tech<small>Software</small></span>
+      <span class="brand-name">DB Tech<small>Software</small></span>
     </a>
 
     <nav aria-label="Principal" data-i18n-aria="navLabel">
       <ul class="nav-links" id="navLinks">
+        <li><a href="#ia" data-i18n="nav.ai">IA</a></li>
         <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-        <li><a href="#casos" data-i18n="nav.cases">Casos de éxito</a></li>
-        <li><a href="#proceso" data-i18n="nav.process">Proceso</a></li>
-        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-        <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+        <li><a href="#productos" data-i18n="nav.products">Productos</a></li>
+        <li><a href="#casos" data-i18n="nav.cases">Casos</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#confianza" data-i18n="nav.trust">Confianza</a></li>
         <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
       </ul>
     </nav>
@@ -89,10 +105,10 @@
           <svg class="icon"><use href="#i-palette"/></svg>
         </button>
         <ul class="theme-menu" id="themeMenu" role="menu">
+          <li><button type="button" role="menuitemradio" data-theme-opt="dark" aria-checked="false"><i class="swatch sw-dark"></i><span data-i18n="theme.dark">Neón (oscuro)</span></button></li>
           <li><button type="button" role="menuitemradio" data-theme-opt="light" aria-checked="false"><i class="swatch sw-light"></i><span data-i18n="theme.light">Claro</span></button></li>
-          <li><button type="button" role="menuitemradio" data-theme-opt="dark" aria-checked="false"><i class="swatch sw-dark"></i><span data-i18n="theme.dark">Oscuro</span></button></li>
-          <li><button type="button" role="menuitemradio" data-theme-opt="ocean" aria-checked="false"><i class="swatch sw-ocean"></i><span data-i18n="theme.ocean">Océano</span></button></li>
-          <li><button type="button" role="menuitemradio" data-theme-opt="sunset" aria-checked="false"><i class="swatch sw-sunset"></i><span data-i18n="theme.sunset">Atardecer</span></button></li>
+          <li><button type="button" role="menuitemradio" data-theme-opt="cyber" aria-checked="false"><i class="swatch sw-cyber"></i><span>Cyberpunk</span></button></li>
+          <li><button type="button" role="menuitemradio" data-theme-opt="matrix" aria-checked="false"><i class="swatch sw-matrix"></i><span>Matrix</span></button></li>
         </ul>
       </div>
       <a href="#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Hablemos</a>
@@ -107,43 +123,40 @@
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-floor" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-grid">
       <div class="reveal">
-        <span class="eyebrow" data-i18n="hero.eyebrow">Desarrollo de software · Hecho en Colombia 🇨🇴</span>
-        <h1 data-i18n="hero.title">Construimos el software que <span class="gradient-text">impulsa</span> tu negocio</h1>
-        <p class="lead" data-i18n="hero.lead">Diseñamos, desarrollamos y operamos aplicaciones web, móviles y en la nube para empresas que quieren crecer sin límites tecnológicos. Equipos senior, procesos ágiles y la cercanía de un aliado que habla tu idioma.</p>
+        <span class="pill"><span class="pill-dot"></span><span data-i18n="hero.eyebrow">AI-native software company · Hecho en Colombia</span></span>
+        <h1 data-i18n="hero.title">Software inteligente,<br><span class="gradient-text">construido con IA.</span></h1>
+        <p class="lead" data-i18n="hero.lead">Creamos agentes de IA, plataformas y aplicaciones que automatizan procesos y multiplican la productividad de tu empresa. Nuestros equipos trabajan con workflows de ingeniería potenciados por IA: entregamos más rápido, con más calidad y a menor costo.</p>
         <div class="hero-ctas">
-          <a href="#contacto" class="btn btn-primary"><span data-i18n="hero.cta1">Agenda una consultoría gratis</span><svg class="icon"><use href="#i-arrow"/></svg></a>
-          <a href="#servicios" class="btn btn-ghost" data-i18n="hero.cta2">Ver servicios</a>
+          <a href="#contacto" class="btn btn-primary"><span data-i18n="hero.cta1">Agenda un diagnóstico de IA gratis</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#ia" class="btn btn-ghost"><svg class="icon"><use href="#i-spark"/></svg><span data-i18n="hero.cta2">Cómo usamos la IA</span></a>
         </div>
-        <div class="hero-note"><span class="dot"></span><span data-i18n="hero.note">Respondemos en menos de 24 horas hábiles</span></div>
+        <div class="hero-trust">
+          <div class="avatars" aria-hidden="true"><span class="av av-1">LR</span><span class="av av-2">CM</span><span class="av av-3">AO</span><span class="av av-4">MT</span></div>
+          <div>
+            <div class="rating"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><b>4.9/5</b></div>
+            <small data-i18n="hero.trust">Calificación promedio de +45 empresas clientes</small>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="code-window">
-          <div class="code-top"><i></i><i></i><i></i><span>partner.ts</span></div>
-<pre><span class="tk-c" data-i18n="hero.code">// Tu próximo aliado tecnológico</span>
-<span class="tk-k">const</span> dbtech = <span class="tk-k">new</span> <span class="tk-f">Partner</span>({
-  location: <span class="tk-s">"Colombia 🇨🇴"</span>,
-  timezone: <span class="tk-s">"GMT-5"</span>,
-  team: <span class="tk-p">40</span>,
-  stack: [<span class="tk-s">"React"</span>, <span class="tk-s">"Node"</span>, <span class="tk-s">".NET"</span>, <span class="tk-s">"AWS"</span>],
-  mission: <span class="tk-s">"build what matters"</span>,
-});
-
-<span class="tk-k">await</span> dbtech.<span class="tk-f">ship</span>(yourIdea); <span class="cursor"></span></pre>
+      <div class="hero-visual reveal">
+        <div class="orb" aria-hidden="true"></div>
+        <div class="terminal glow-border">
+          <div class="term-top"><i></i><i></i><i></i><span>dbtech-agent — zsh</span><b class="live"><span></span>LIVE</b></div>
+          <pre class="term-body" id="terminal" role="img" aria-label="Flujo de trabajo de un agente de IA de DB Tech" data-i18n-aria="hero.termAria"></pre>
         </div>
-        <div class="float-card fc-1"><span class="badge"><svg class="icon"><use href="#i-rocket"/></svg></span><div><span data-i18n="hero.fc1">Deploy exitoso</span><small>production · 42s</small></div></div>
-        <div class="float-card fc-2"><span class="badge"><svg class="icon"><use href="#i-shield"/></svg></span><div>99.98% uptime<small data-i18n="hero.fc2">últimos 12 meses</small></div></div>
+        <span class="model-chip mc-1" aria-hidden="true">Claude</span>
+        <span class="model-chip mc-2" aria-hidden="true">GPT</span>
+        <span class="model-chip mc-3" aria-hidden="true">Gemini</span>
+        <span class="model-chip mc-4" aria-hidden="true">Llama</span>
+        <div class="float-card fc-1" aria-hidden="true"><span class="badge"><svg class="icon"><use href="#i-rocket"/></svg></span><div><b>-40% time-to-market</b><small data-i18n="hero.fc1s">con workflows de IA</small></div></div>
+        <div class="float-card fc-2" aria-hidden="true"><span class="badge b2"><svg class="icon"><use href="#i-shield"/></svg></span><div><b>99.98% uptime</b><small data-i18n="hero.fc2">últimos 12 meses</small></div></div>
       </div>
-    </div>
-
-    <div class="stats reveal">
-      <div class="stat"><b data-count="120" data-suffix="+">120+</b><span data-i18n="stats.projects">proyectos entregados</span></div>
-      <div class="stat"><b data-count="9">9</b><span data-i18n="stats.years">años creando software</span></div>
-      <div class="stat"><b data-count="45" data-suffix="+">45+</b><span data-i18n="stats.clients">clientes en 6 países</span></div>
-      <div class="stat"><b data-count="98" data-suffix="%">98%</b><span data-i18n="stats.nps">clientes que nos recomiendan</span></div>
     </div>
   </div>
 </section>
@@ -151,15 +164,15 @@
 <!-- ===================== CLIENTES ===================== -->
 <section class="clients" aria-labelledby="clients-title">
   <div class="container">
-    <p id="clients-title" data-i18n="clients.title">Empresas que confían en nosotros</p>
+    <p id="clients-title" class="mono-label center" data-i18n="clients.title">// Empresas que ya innovan con nosotros</p>
   </div>
   <div class="marquee">
     <div class="marquee-track" id="marquee">
       <span class="client-logo"><svg viewBox="0 0 32 32"><path d="M2 26 12 8l6 10 4-6 8 14Z" fill="currentColor"/></svg>Andina<em>Logística</em></span>
-      <span class="client-logo"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="16" rx="9" ry="13" fill="currentColor" transform="rotate(30 16 16)"/><path d="M10 25c6-5 6-13 12-18" stroke="var(--bg-alt)" stroke-width="2.4" fill="none"/></svg>Café<em>Altamira</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><rect x="3" y="18" width="6" height="11" rx="1.5" fill="currentColor"/><rect x="13" y="11" width="6" height="18" rx="1.5" fill="currentColor"/><rect x="23" y="3" width="6" height="26" rx="1.5" fill="currentColor"/></svg>FinCo<em>Capital</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><path d="M12 3h8v9h9v8h-9v9h-8v-9H3v-8h9Z" fill="currentColor"/></svg>Salud Vital<em>IPS</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M16 3v26M3 16h26" stroke="currentColor" stroke-width="2.5"/></svg>Grupo<em>Meridiano</em></span>
+      <span class="client-logo"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="16" rx="9" ry="13" fill="currentColor" transform="rotate(30 16 16)"/></svg>Café<em>Altamira</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><path d="M16 29V13M16 13C16 6 22 3 29 3c0 7-4 11-13 10ZM16 18C16 12 11 9 3 9c0 6 4 10 13 9Z" fill="currentColor"/></svg>Agro<em>Nova</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><path d="M2 20c4-4 8-4 12 0s8 4 12 0 4-2 4-2v6s-4 4-8 2-8-6-12-4-8 4-8 4Z" fill="currentColor"/><circle cx="22" cy="9" r="5" fill="currentColor"/></svg>Pacífico<em>Retail</em></span>
       <span class="client-logo"><svg viewBox="0 0 32 32"><path d="M16 4 2 11l14 7 14-7Z" fill="currentColor"/><path d="M7 15v7c3 3 15 3 18 0v-7" stroke="currentColor" stroke-width="3" fill="none"/></svg>Edu<em>Red</em></span>
@@ -168,192 +181,348 @@
   </div>
 </section>
 
-<!-- ===================== SERVICIOS ===================== -->
+<!-- ===================== MÉTRICAS ===================== -->
+<section class="metrics" aria-label="Cifras" data-i18n-aria="m.aria">
+  <div class="container metrics-grid reveal">
+    <div class="metric"><b data-count="120" data-suffix="+">120+</b><span data-i18n="m.1">proyectos entregados</span></div>
+    <div class="metric"><b data-count="35" data-suffix="+">35+</b><span data-i18n="m.2">soluciones de IA en producción</span></div>
+    <div class="metric"><b data-count="40" data-suffix="%">40%</b><span data-i18n="m.3">menos tiempo de desarrollo con IA</span></div>
+    <div class="metric"><b data-count="98" data-suffix="%">98%</b><span data-i18n="m.4">de clientes nos recomiendan</span></div>
+  </div>
+</section>
+
+<!-- ===================== IA-NATIVE ===================== -->
+<section class="section" id="ia">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="mono-label">// 01 · AI-NATIVE</p>
+      <h2 data-i18n="ai.title">La IA no es un servicio más. <span class="gradient-text">Es cómo trabajamos.</span></h2>
+      <p data-i18n="ai.lead">Integramos inteligencia artificial en cada etapa del ciclo de desarrollo. Nuestros ingenieros senior trabajan junto a agentes de IA, lo que nos permite entregar software de mayor calidad en menos tiempo.</p>
+    </div>
+
+    <ol class="pipeline">
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-search"/></svg></div><span class="stage-n">01</span></div>
+        <h3 data-i18n="pl.1t">Descubrimiento asistido por IA</h3>
+        <p data-i18n="pl.1d">Analizamos documentos, procesos y entrevistas con LLMs para convertir ideas en requerimientos y criterios de aceptación en días, no semanas.</p>
+        <ul class="tags"><li>Claude</li><li>ChatGPT</li><li>Miro</li></ul>
+      </li>
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-pen"/></svg></div><span class="stage-n">02</span></div>
+        <h3 data-i18n="pl.2t">Diseño y prototipado acelerado</h3>
+        <p data-i18n="pl.2d">Prototipos interactivos generados y refinados con IA, validados con usuarios reales antes de construir.</p>
+        <ul class="tags"><li>Figma</li><li>v0</li><li>Design Systems</li></ul>
+      </li>
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-bot"/></svg></div><span class="stage-n">03</span></div>
+        <h3 data-i18n="pl.3t">Desarrollo con agentes de código</h3>
+        <p data-i18n="pl.3d">Cada ingeniero trabaja con agentes de IA que aceleran el trabajo repetitivo. Las personas se enfocan en arquitectura, negocio y calidad.</p>
+        <ul class="tags"><li>Claude Code</li><li>GitHub Copilot</li><li>Cursor</li></ul>
+      </li>
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></div><span class="stage-n">04</span></div>
+        <h3 data-i18n="pl.4t">Revisión de código y seguridad con IA</h3>
+        <p data-i18n="pl.4d">Cada cambio pasa por análisis automático de calidad, vulnerabilidades y buenas prácticas antes de la revisión humana.</p>
+        <ul class="tags"><li>SonarQube</li><li>Snyk</li><li>AI Review</li></ul>
+      </li>
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-test"/></svg></div><span class="stage-n">05</span></div>
+        <h3 data-i18n="pl.5t">Pruebas generadas automáticamente</h3>
+        <p data-i18n="pl.5d">La IA genera pruebas unitarias, de integración y end-to-end, para una cobertura superior al 80% desde el primer sprint.</p>
+        <ul class="tags"><li>Playwright</li><li>Jest</li><li>k6</li></ul>
+      </li>
+      <li class="stage glass reveal">
+        <div class="stage-top"><div class="card-icon"><svg class="icon"><use href="#i-pulse"/></svg></div><span class="stage-n">06</span></div>
+        <h3 data-i18n="pl.6t">Despliegue y observabilidad inteligente</h3>
+        <p data-i18n="pl.6d">CI/CD automatizado, monitoreo 24/7 y detección de anomalías con IA para resolver incidentes antes de que los notes.</p>
+        <ul class="tags"><li>GitHub Actions</li><li>Terraform</li><li>Datadog</li></ul>
+      </li>
+    </ol>
+
+    <div class="compare glass reveal">
+      <div class="compare-row compare-head">
+        <span></span>
+        <span data-i18n="cmp.trad">Desarrollo tradicional</span>
+        <span class="hl"><svg class="icon"><use href="#i-spark"/></svg>DB Tech · AI-native</span>
+      </div>
+      <div class="compare-row"><span data-i18n="cmp.r1">Tiempo hasta el primer MVP</span><span><svg class="icon x"><use href="#i-x"/></svg><span data-i18n="cmp.r1a">4 – 6 meses</span></span><span><svg class="icon ok"><use href="#i-check"/></svg><span data-i18n="cmp.r1b">8 – 12 semanas</span></span></div>
+      <div class="compare-row"><span data-i18n="cmp.r2">Cobertura de pruebas</span><span><svg class="icon x"><use href="#i-x"/></svg><span data-i18n="cmp.r2a">Manual y parcial</span></span><span><svg class="icon ok"><use href="#i-check"/></svg><span data-i18n="cmp.r2b">+80% automatizada</span></span></div>
+      <div class="compare-row"><span data-i18n="cmp.r3">Revisión de seguridad</span><span><svg class="icon x"><use href="#i-x"/></svg><span data-i18n="cmp.r3a">Al final del proyecto</span></span><span><svg class="icon ok"><use href="#i-check"/></svg><span data-i18n="cmp.r3b">En cada cambio de código</span></span></div>
+      <div class="compare-row"><span data-i18n="cmp.r4">Documentación</span><span><svg class="icon x"><use href="#i-x"/></svg><span data-i18n="cmp.r4a">Desactualizada</span></span><span><svg class="icon ok"><use href="#i-check"/></svg><span data-i18n="cmp.r4b">Generada y siempre al día</span></span></div>
+      <div class="compare-row"><span data-i18n="cmp.r5">Costo total</span><span><svg class="icon x"><use href="#i-x"/></svg><span data-i18n="cmp.r5a">Alto</span></span><span><svg class="icon ok"><use href="#i-check"/></svg><span data-i18n="cmp.r5b">Hasta 30% menor</span></span></div>
+      <p class="compare-note"><svg class="icon"><use href="#i-human"/></svg><span data-i18n="cmp.note"><b>Humanos al mando:</b> la IA acelera, nuestros ingenieros deciden. Todo el código es revisado y aprobado por personas.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS (bento) ===================== -->
 <section class="section" id="servicios">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="services.eyebrow">Servicios</span>
-      <h2 data-i18n="services.title">Todo lo que tu producto digital necesita, en un solo equipo</h2>
-      <p data-i18n="services.lead">Desde la idea hasta la operación en producción. Elige un servicio puntual o un equipo completo que se encargue de principio a fin.</p>
+      <p class="mono-label" data-i18n="services.label">// 02 · SERVICIOS</p>
+      <h2 data-i18n="services.title">Soluciones de punta a punta, <span class="gradient-text">con IA en el centro</span></h2>
+      <p data-i18n="services.lead">Desde la estrategia hasta la operación en producción. Un solo equipo para llevar tu empresa a la era de la inteligencia artificial.</p>
     </div>
 
-    <div class="cards">
-      <article class="card reveal">
+    <div class="bento">
+      <article class="card glass glow-border b-a reveal">
+        <span class="card-kicker" data-i18n="sv.featured">★ Más solicitado</span>
+        <div class="card-icon"><svg class="icon"><use href="#i-bot"/></svg></div>
+        <h3 data-i18n="sv.1t">Agentes de IA y automatización inteligente</h3>
+        <p data-i18n="sv.1d">Agentes autónomos que atienden clientes, procesan documentos, consultan tus sistemas y ejecutan tareas de principio a fin, con supervisión humana donde importa. Menos trabajo manual, más velocidad y cero tareas repetitivas.</p>
+        <div class="agent-flow" aria-hidden="true">
+          <span class="node"><svg class="icon"><use href="#i-human"/></svg><span data-i18n="flow.user">Usuario</span></span>
+          <span class="wire"></span>
+          <span class="node core"><svg class="icon"><use href="#i-brain"/></svg><span data-i18n="flow.agent">Agente IA</span></span>
+          <span class="wire"></span>
+          <span class="node-stack"><span class="node sm">CRM</span><span class="node sm">ERP</span><span class="node sm">Docs</span></span>
+        </div>
+        <div class="kpis">
+          <div><b>24/7</b><span data-i18n="kpi.1">operación autónoma</span></div>
+          <div><b>-60%</b><span data-i18n="kpi.2">trabajo manual</span></div>
+          <div><b>&lt;2s</b><span data-i18n="kpi.3">tiempo de respuesta promedio</span></div>
+        </div>
+        <ul class="tags"><li>LangGraph</li><li>MCP</li><li>Claude</li><li>OpenAI</li><li>n8n</li></ul>
+      </article>
+      <article class="card glass b-b reveal">
+        <div class="card-icon"><svg class="icon"><use href="#i-brain"/></svg></div>
+        <h3 data-i18n="sv.2t">IA generativa con tus datos (RAG)</h3>
+        <p data-i18n="sv.2d">Asistentes y buscadores que responden con la información de tu empresa, con citas verificables y permisos por usuario.</p>
+        <ul class="tags"><li>pgvector</li><li>LlamaIndex</li><li>Bedrock</li></ul>
+      </article>
+      <article class="card glass b-c reveal">
         <div class="card-icon"><svg class="icon"><use href="#i-code"/></svg></div>
-        <h3 data-i18n="s1.t">Desarrollo web a la medida</h3>
-        <p data-i18n="s1.d">Plataformas, portales y sistemas internos robustos, rápidos y seguros, diseñados alrededor de cómo trabaja tu empresa.</p>
-        <ul class="tags"><li>React</li><li>Angular</li><li>Node.js</li><li>.NET</li></ul>
+        <h3 data-i18n="sv.3t">Desarrollo web y móvil</h3>
+        <p data-i18n="sv.3d">Plataformas y apps modernas, rápidas y seguras, con IA integrada desde el diseño.</p>
+        <ul class="tags"><li>Next.js</li><li>React Native</li><li>Flutter</li><li>.NET</li></ul>
       </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="icon"><use href="#i-phone"/></svg></div>
-        <h3 data-i18n="s2.t">Aplicaciones móviles</h3>
-        <p data-i18n="s2.d">Apps para iOS y Android con una sola base de código, desde el prototipo hasta la publicación en las tiendas y su evolución.</p>
-        <ul class="tags"><li>Flutter</li><li>React Native</li><li>iOS</li><li>Android</li></ul>
-      </article>
-      <article class="card reveal">
+      <article class="card glass b-d reveal">
         <div class="card-icon"><svg class="icon"><use href="#i-cloud"/></svg></div>
-        <h3 data-i18n="s3.t">Cloud y DevOps</h3>
-        <p data-i18n="s3.d">Migración a la nube, contenedores, CI/CD e infraestructura como código para escalar sin sorpresas y reducir costos.</p>
-        <ul class="tags"><li>AWS</li><li>Azure</li><li>GCP</li><li>Kubernetes</li></ul>
+        <h3 data-i18n="sv.4t">Cloud, DevOps y LLMOps</h3>
+        <p data-i18n="sv.4d">Infraestructura escalable lista para IA: evaluación de modelos, control del gasto en tokens, versiones y monitoreo.</p>
+        <ul class="tags"><li>AWS</li><li>Azure</li><li>Kubernetes</li><li>Langfuse</li></ul>
       </article>
-      <article class="card reveal">
+      <article class="card glass b-e reveal">
+        <div class="card-icon"><svg class="icon"><use href="#i-chart"/></svg></div>
+        <h3 data-i18n="sv.5t">Datos y analítica predictiva</h3>
+        <p data-i18n="sv.5d">Pipelines de datos, tableros y modelos que predicen demanda, abandono de clientes y fraude.</p>
+        <ul class="tags"><li>Databricks</li><li>Snowflake</li><li>Power BI</li></ul>
+      </article>
+      <article class="card glass b-f reveal">
         <div class="card-icon"><svg class="icon"><use href="#i-plug"/></svg></div>
-        <h3 data-i18n="s4.t">Integraciones y APIs</h3>
-        <p data-i18n="s4.d">Conectamos tu ERP, CRM, pasarelas de pago y facturación electrónica DIAN para que tus sistemas hablen el mismo idioma.</p>
-        <ul class="tags"><li>REST</li><li>GraphQL</li><li>SAP</li><li data-i18n="s4.tag">Facturación DIAN</li></ul>
+        <h3 data-i18n="sv.6t">Integraciones y APIs</h3>
+        <p data-i18n="sv.6d">Conectamos ERP, CRM, pagos y facturación electrónica DIAN, y los exponemos de forma segura a tus agentes de IA.</p>
+        <ul class="tags"><li>REST</li><li>GraphQL</li><li>SAP</li><li>MCP</li></ul>
       </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="icon"><use href="#i-spark"/></svg></div>
-        <h3 data-i18n="s5.t">Datos e inteligencia artificial</h3>
-        <p data-i18n="s5.d">Tableros, analítica, automatización de procesos y asistentes con IA generativa que convierten tus datos en decisiones.</p>
-        <ul class="tags"><li>Power BI</li><li>Python</li><li>LLMs</li><li>RAG</li></ul>
+      <article class="card glass b-g reveal">
+        <div class="card-icon"><svg class="icon"><use href="#i-compass"/></svg></div>
+        <div class="b-g-text">
+          <h3 data-i18n="sv.7t">Consultoría y adopción de IA</h3>
+          <p data-i18n="sv.7d">Diagnóstico de madurez, hoja de ruta, casos de uso con retorno medible, gobierno de IA y capacitación para tus equipos. Te ayudamos a pasar de los pilotos a resultados reales.</p>
+        </div>
+        <a href="#contacto" class="btn btn-ghost btn-sm"><span data-i18n="sv.7cta">Solicitar diagnóstico</span><svg class="icon"><use href="#i-arrow"/></svg></a>
       </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="icon"><use href="#i-users"/></svg></div>
-        <h3 data-i18n="s6.t">Consultoría y equipos dedicados</h3>
-        <p data-i18n="s6.d">Arquitectura, auditoría de código y equipos nearshore que se integran a tu operación en tu mismo horario.</p>
-        <ul class="tags"><li data-i18n="s6.tag1">Arquitectura</li><li>QA</li><li>UX/UI</li><li>Nearshore</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTOS ===================== -->
+<section class="section" id="productos">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="mono-label" data-i18n="pr.label">// 03 · PRODUCTOS</p>
+      <h2 data-i18n="pr.title">Productos de IA <span class="gradient-text">listos para tu empresa</span></h2>
+      <p data-i18n="pr.lead">Plataformas propias que implementamos en semanas y adaptamos a tu operación.</p>
+    </div>
+    <div class="products">
+      <article class="product glass reveal">
+        <div class="product-top"><div class="card-icon"><svg class="icon"><use href="#i-bot"/></svg></div><span class="status" data-i18n="pr.avail">Disponible</span></div>
+        <h3>DB Agents</h3>
+        <p data-i18n="pr.1">Plataforma para crear, orquestar y monitorear agentes de IA conectados a tus sistemas, con trazabilidad completa de cada decisión.</p>
+        <span class="product-meta" data-i18n="pr.1m">Orquestación · Auditoría · Multi-modelo</span>
+      </article>
+      <article class="product glass reveal">
+        <div class="product-top"><div class="card-icon"><svg class="icon"><use href="#i-doc"/></svg></div><span class="status" data-i18n="pr.avail">Disponible</span></div>
+        <h3>DB DocAI</h3>
+        <p data-i18n="pr.2">Extrae datos de facturas, contratos, cédulas y RUT con más del 98% de precisión y los lleva directo a tu ERP.</p>
+        <span class="product-meta" data-i18n="pr.2m">OCR + LLM · Facturación DIAN · ERP</span>
+      </article>
+      <article class="product glass reveal">
+        <div class="product-top"><div class="card-icon"><svg class="icon"><use href="#i-chat"/></svg></div><span class="status" data-i18n="pr.avail">Disponible</span></div>
+        <h3>DB Assist</h3>
+        <p data-i18n="pr.3">Asistente de atención 24/7 para WhatsApp y web que responde, agenda, cotiza y escala a un humano cuando es necesario.</p>
+        <span class="product-meta" data-i18n="pr.3m">WhatsApp · Web · Voz</span>
+      </article>
+      <article class="product glass reveal">
+        <div class="product-top"><div class="card-icon"><svg class="icon"><use href="#i-chart"/></svg></div><span class="status beta">Beta</span></div>
+        <h3>DB Insights</h3>
+        <p data-i18n="pr.4">Pregúntale a tus datos en lenguaje natural y obtén respuestas, gráficos y alertas al instante, sin escribir SQL.</p>
+        <span class="product-meta" data-i18n="pr.4m">Text-to-SQL · Dashboards · Alertas</span>
       </article>
     </div>
   </div>
 </section>
 
 <!-- ===================== CASOS ===================== -->
-<section class="section alt" id="casos">
+<section class="section" id="casos">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="cases.eyebrow">Casos de éxito</span>
-      <h2 data-i18n="cases.title">Resultados que se pueden medir</h2>
-      <p data-i18n="cases.lead">Algunos de los proyectos de los que más nos enorgullecemos.</p>
+      <p class="mono-label" data-i18n="cases.label">// 04 · CASOS DE ÉXITO</p>
+      <h2 data-i18n="cases.title">Resultados reales, <span class="gradient-text">medibles</span></h2>
+      <p data-i18n="cases.lead">Así es como la IA está transformando la operación de nuestros clientes.</p>
     </div>
-    <div class="cards">
-      <article class="card case reveal">
-        <div class="case-cover c1"><span data-i18n="c1.tag">Logística</span></div>
+    <div class="cases">
+      <article class="case glass reveal">
+        <div class="case-cover c1"><span class="case-tag" data-i18n="c1.tag">Logística · Agentes de IA</span><span class="case-big">-32%</span></div>
         <div class="case-body">
-          <h3 data-i18n="c1.t">Rastreo de flota en tiempo real para Andina Logística</h3>
-          <p data-i18n="c1.d">Plataforma web y app para conductores con GPS, rutas optimizadas y prueba de entrega digital para más de 600 vehículos.</p>
-          <div class="case-metric"><b>-32%</b><span data-i18n="c1.m">en tiempos de entrega</span></div>
-          <ul class="tags"><li>React</li><li>Flutter</li><li>AWS</li></ul>
+          <h3 data-i18n="c1.t">Agente de despacho inteligente para Andina Logística</h3>
+          <p data-i18n="c1.d">Un agente de IA asigna rutas, prevé retrasos y avisa a los clientes en tiempo real para una flota de más de 600 vehículos.</p>
+          <p class="case-metric" data-i18n="c1.m">en tiempos de entrega</p>
+          <ul class="tags"><li>LangGraph</li><li>AWS</li><li>Flutter</li></ul>
         </div>
       </article>
-      <article class="card case reveal">
-        <div class="case-cover c2"><span data-i18n="c2.tag">Salud</span></div>
+      <article class="case glass reveal">
+        <div class="case-cover c2"><span class="case-tag" data-i18n="c2.tag">Salud · IA generativa</span><span class="case-big">70%</span></div>
         <div class="case-body">
-          <h3 data-i18n="c2.t">Citas y telemedicina para Salud Vital IPS</h3>
-          <p data-i18n="c2.d">App móvil para agendar citas, videoconsultas y resultados de laboratorio, integrada con la historia clínica existente.</p>
-          <div class="case-metric"><b>80K+</b><span data-i18n="c2.m">pacientes atendidos al año</span></div>
-          <ul class="tags"><li>React Native</li><li>.NET</li><li>Azure</li></ul>
+          <h3 data-i18n="c2.t">Asistente con RAG y agendamiento por WhatsApp para Salud Vital IPS</h3>
+          <p data-i18n="c2.d">Responde dudas de pacientes con información verificada, agenda citas y entrega resultados de laboratorio 24/7.</p>
+          <p class="case-metric" data-i18n="c2.m">de solicitudes resueltas sin intervención humana</p>
+          <ul class="tags"><li>DB Assist</li><li>Azure OpenAI</li><li>.NET</li></ul>
         </div>
       </article>
-      <article class="card case reveal">
-        <div class="case-cover c3"><span data-i18n="c3.tag">E-commerce</span></div>
+      <article class="case glass reveal">
+        <div class="case-cover c3"><span class="case-tag" data-i18n="c3.tag">Fintech · DocAI</span><span class="case-big">15 min</span></div>
         <div class="case-body">
-          <h3 data-i18n="c3.t">Tienda de exportación para Café Altamira</h3>
-          <p data-i18n="c3.d">E-commerce bilingüe con pagos internacionales, suscripciones y cálculo automático de envíos a 14 países.</p>
-          <div class="case-metric"><b>3×</b><span data-i18n="c3.m">ventas online en el primer año</span></div>
-          <ul class="tags"><li>Next.js</li><li>Stripe</li><li>Wompi</li></ul>
+          <h3 data-i18n="c3.t">Motor de análisis de crédito con IA para FinCo Capital</h3>
+          <p data-i18n="c3.d">Lectura automática de documentos, validación de identidad y scoring con modelos predictivos en un solo flujo.</p>
+          <p class="case-metric" data-i18n="c3.m">para aprobar un crédito (antes: 3 días)</p>
+          <ul class="tags"><li>DB DocAI</li><li>Python</li><li>GCP</li></ul>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ===================== PROCESO ===================== -->
-<section class="section" id="proceso">
+<!-- ===================== STACK ===================== -->
+<section class="section" id="stack">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="process.eyebrow">Cómo trabajamos</span>
-      <h2 data-i18n="process.title">Un proceso claro, sin sorpresas</h2>
-      <p data-i18n="process.lead">Sabrás qué estamos construyendo, cuánto cuesta y cuándo estará listo, en cada etapa.</p>
+      <p class="mono-label" data-i18n="st.label">// 05 · STACK TECNOLÓGICO</p>
+      <h2 data-i18n="st.title">Las tecnologías <span class="gradient-text">que mueven el futuro</span></h2>
+      <p data-i18n="st.lead">Trabajamos con los modelos, frameworks y plataformas líderes del mercado y elegimos el adecuado para cada problema, sin atarnos a un solo proveedor.</p>
     </div>
-    <div class="steps">
-      <div class="step reveal"><div class="step-num">01</div><h3 data-i18n="p1.t">Descubrimiento</h3><p data-i18n="p1.d">Entendemos tu negocio, tus usuarios y tus objetivos. Definimos alcance, prioridades y una estimación transparente.</p><span class="step-time" data-i18n="p1.time">1 – 2 semanas</span></div>
-      <div class="step reveal"><div class="step-num">02</div><h3 data-i18n="p2.t">Diseño UX/UI</h3><p data-i18n="p2.d">Creamos prototipos interactivos y los validamos con usuarios reales antes de escribir una sola línea de código.</p><span class="step-time" data-i18n="p2.time">2 – 3 semanas</span></div>
-      <div class="step reveal"><div class="step-num">03</div><h3 data-i18n="p3.t">Desarrollo ágil</h3><p data-i18n="p3.d">Sprints de dos semanas con demos funcionales, pruebas automatizadas y acceso total al avance del proyecto.</p><span class="step-time" data-i18n="p3.time">Iterativo</span></div>
-      <div class="step reveal"><div class="step-num">04</div><h3 data-i18n="p4.t">Lanzamiento y evolución</h3><p data-i18n="p4.d">Desplegamos, monitoreamos y acompañamos tu producto con soporte y mejoras continuas.</p><span class="step-time" data-i18n="p4.time">Soporte continuo</span></div>
+    <div class="stack-grid">
+      <div class="stack-group glass reveal featured">
+        <h3><svg class="icon"><use href="#i-brain"/></svg><span data-i18n="st.g1">Modelos de IA</span></h3>
+        <div class="chips"><span>Claude (Anthropic)</span><span>GPT (OpenAI)</span><span>Gemini (Google)</span><span>Llama (Meta)</span><span>Mistral</span><span>Hugging Face</span><span>PyTorch</span></div>
+      </div>
+      <div class="stack-group glass reveal featured">
+        <h3><svg class="icon"><use href="#i-bot"/></svg><span data-i18n="st.g2">Agentes y orquestación</span></h3>
+        <div class="chips"><span>LangChain</span><span>LangGraph</span><span>LlamaIndex</span><span>Model Context Protocol</span><span>Vercel AI SDK</span><span>CrewAI</span><span>n8n</span></div>
+      </div>
+      <div class="stack-group glass reveal">
+        <h3><svg class="icon"><use href="#i-db"/></svg><span data-i18n="st.g3">Datos y vectores</span></h3>
+        <div class="chips"><span>PostgreSQL + pgvector</span><span>Pinecone</span><span>Qdrant</span><span>Redis</span><span>MongoDB</span><span>Databricks</span><span>Snowflake</span><span>Kafka</span></div>
+      </div>
+      <div class="stack-group glass reveal">
+        <h3><svg class="icon"><use href="#i-cloud"/></svg><span data-i18n="st.g4">Cloud e IA gestionada</span></h3>
+        <div class="chips"><span>AWS Bedrock</span><span>Azure OpenAI</span><span>Google Vertex AI</span><span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span><span>Cloudflare</span></div>
+      </div>
+      <div class="stack-group glass reveal">
+        <h3><svg class="icon"><use href="#i-code"/></svg><span data-i18n="st.g5">Desarrollo de producto</span></h3>
+        <div class="chips"><span>TypeScript</span><span>React</span><span>Next.js</span><span>Angular</span><span>Node.js</span><span>Python · FastAPI</span><span>.NET</span><span>Go</span><span>Flutter</span><span>React Native</span></div>
+      </div>
+      <div class="stack-group glass reveal">
+        <h3><svg class="icon"><use href="#i-pulse"/></svg><span data-i18n="st.g6">DevOps, LLMOps y herramientas IA</span></h3>
+        <div class="chips"><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span><span>Datadog</span><span>Langfuse</span><span>Claude Code</span><span>GitHub Copilot</span><span>Cursor</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== NOSOTROS ===================== -->
-<section class="section alt" id="nosotros">
+<!-- ===================== CONFIANZA ===================== -->
+<section class="section" id="confianza">
   <div class="container">
-    <div class="about-grid">
-      <div class="reveal">
-        <span class="eyebrow" data-i18n="about.eyebrow">Nosotros</span>
-        <h2 data-i18n="about.title">Ingeniería colombiana con estándar internacional</h2>
-        <p class="lead" data-i18n="about.lead">DB Tech Software nació en 2017 con una idea sencilla: que cualquier empresa, sin importar su tamaño, pueda tener tecnología de primer nivel. Hoy somos un equipo de más de 40 ingenieros, diseñadores y consultores que construyen software para clientes en Colombia, Latinoamérica y Estados Unidos.</p>
+    <div class="section-head reveal">
+      <p class="mono-label" data-i18n="tr.label">// 06 · CONFIANZA</p>
+      <h2 data-i18n="tr.title">IA responsable, segura <span class="gradient-text">y bajo tu control</span></h2>
+      <p data-i18n="tr.lead">Sabemos que confiar tus datos y procesos a la IA es una decisión seria. Por eso la seguridad y la ética están en el centro de todo lo que construimos.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item glass reveal"><div class="card-icon"><svg class="icon"><use href="#i-lock"/></svg></div><h3 data-i18n="tr.1t">Tus datos son tuyos</h3><p data-i18n="tr.1d">No usamos tu información para entrenar modelos. Podemos desplegar la IA en tu propia nube o infraestructura privada.</p></div>
+      <div class="trust-item glass reveal"><div class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></div><h3 data-i18n="tr.2t">Seguridad por diseño</h3><p data-i18n="tr.2d">Aplicamos OWASP Top 10 y OWASP Top 10 para LLMs, pruebas contra prompt injection, cifrado y control de accesos.</p></div>
+      <div class="trust-item glass reveal"><div class="card-icon"><svg class="icon"><use href="#i-scale"/></svg></div><h3 data-i18n="tr.3t">Cumplimiento normativo</h3><p data-i18n="tr.3d">Ley 1581 de 2012 de protección de datos, acuerdos de confidencialidad (NDA) y prácticas alineadas con ISO 27001.</p></div>
+      <div class="trust-item glass reveal"><div class="card-icon"><svg class="icon"><use href="#i-human"/></svg></div><h3 data-i18n="tr.4t">Humanos al mando</h3><p data-i18n="tr.4d">Las decisiones críticas siempre tienen supervisión humana, con trazabilidad y registros auditables de cada acción de la IA.</p></div>
+    </div>
+
+    <div class="certs reveal">
+      <span class="certs-label mono" data-i18n="tr.certs">Equipo certificado en:</span>
+      <span class="cert"><svg class="icon"><use href="#i-award"/></svg>AWS Certified</span>
+      <span class="cert"><svg class="icon"><use href="#i-award"/></svg>Azure AI Engineer</span>
+      <span class="cert"><svg class="icon"><use href="#i-award"/></svg>Google Cloud Certified</span>
+      <span class="cert"><svg class="icon"><use href="#i-award"/></svg>Professional Scrum Master</span>
+      <span class="cert"><svg class="icon"><use href="#i-award"/></svg>Kubernetes (CKA)</span>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="testimonials">
+      <figure class="quote glass reveal">
+        <div class="stars" aria-label="5/5">★★★★★</div>
+        <blockquote data-i18n="q1">“Pasamos de pilotos de IA que nunca salían del laboratorio a cinco agentes funcionando en producción en solo cuatro meses. DB Tech entiende el negocio, no solo la tecnología.”</blockquote>
+        <figcaption class="person"><span class="avatar av-3">AO</span><div><b>Ana María Ospina</b><span data-i18n="q1r">Directora de Innovación, Grupo Meridiano</span></div></figcaption>
+      </figure>
+      <figure class="quote glass reveal">
+        <div class="stars" aria-label="5/5">★★★★★</div>
+        <blockquote data-i18n="q2">“El agente de despacho cambió por completo nuestra operación. Hoy tomamos en minutos decisiones que antes nos tomaban horas.”</blockquote>
+        <figcaption class="person"><span class="avatar av-1">LR</span><div><b>Laura Restrepo</b><span data-i18n="q2r">Gerente de Operaciones, Andina Logística</span></div></figcaption>
+      </figure>
+      <figure class="quote glass reveal">
+        <div class="stars" aria-label="5/5">★★★★★</div>
+        <blockquote data-i18n="q3">“Cumplieron cada fecha y la calidad del código es impecable. Su forma de trabajar con IA se nota en la velocidad de cada entrega.”</blockquote>
+        <figcaption class="person"><span class="avatar av-2">CM</span><div><b>Carlos Mejía</b><span data-i18n="q3r">CEO, FinCo Capital</span></div></figcaption>
+      </figure>
+      <figure class="quote glass reveal">
+        <div class="stars" aria-label="5/5">★★★★★</div>
+        <blockquote data-i18n="q4">“Su equipo nearshore se integró al nuestro desde el primer día. Ingeniería de primer nivel, en nuestro mismo horario.”</blockquote>
+        <figcaption class="person"><span class="avatar av-4">MT</span><div><b>Michael Turner</b><span data-i18n="q4r">CTO, Northbridge Health (EE.UU.)</span></div></figcaption>
+      </figure>
+    </div>
+
+    <!-- Nosotros -->
+    <div class="about glass reveal" id="nosotros">
+      <div class="about-text">
+        <p class="mono-label" data-i18n="ab.label">// NOSOTROS</p>
+        <h3 data-i18n="ab.title">Ingeniería colombiana, estándar global</h3>
+        <p data-i18n="ab.lead">Desde 2017 construimos software para empresas en Colombia, Latinoamérica y Estados Unidos. Hoy somos más de 40 ingenieros, científicos de datos y diseñadores que comparten una misma convicción: la IA bien aplicada transforma empresas.</p>
         <div class="mv">
-          <div class="mv-item"><div class="card-icon"><svg class="icon"><use href="#i-target"/></svg></div><div><h3 data-i18n="about.mT">Misión</h3><p data-i18n="about.m">Crear soluciones de software confiables y a la medida que ayuden a nuestros clientes a operar mejor, crecer más rápido y competir en un mundo digital.</p></div></div>
-          <div class="mv-item"><div class="card-icon"><svg class="icon"><use href="#i-eye"/></svg></div><div><h3 data-i18n="about.vT">Visión</h3><p data-i18n="about.v">Para 2030, ser la empresa de software colombiana de referencia en Latinoamérica por la calidad de su ingeniería y el impacto de sus productos.</p></div></div>
+          <div><h4><svg class="icon"><use href="#i-target"/></svg><span data-i18n="ab.mT">Misión</span></h4><p data-i18n="ab.m">Llevar la inteligencia artificial y el software de clase mundial a cada empresa, con soluciones que generen resultados medibles.</p></div>
+          <div><h4><svg class="icon"><use href="#i-eye"/></svg><span data-i18n="ab.vT">Visión</span></h4><p data-i18n="ab.v">Para 2030, ser la empresa de software e IA de referencia en Latinoamérica.</p></div>
         </div>
       </div>
-
-      <div class="why reveal">
-        <h3 data-i18n="why.title">¿Por qué elegirnos?</h3>
-        <ul class="checklist">
-          <li><svg class="icon"><use href="#i-check"/></svg><div><b data-i18n="why.1t">Talento senior</b><span data-i18n="why.1d">Más del 70% de nuestro equipo tiene más de 5 años de experiencia.</span></div></li>
-          <li><svg class="icon"><use href="#i-check"/></svg><div><b data-i18n="why.2t">Tu mismo horario</b><span data-i18n="why.2d">GMT-5: colaboración en tiempo real con Latinoamérica y EE.UU.</span></div></li>
-          <li><svg class="icon"><use href="#i-check"/></svg><div><b data-i18n="why.3t">Precios transparentes</b><span data-i18n="why.3d">Propuestas claras, por proyecto o por equipo, sin costos ocultos.</span></div></li>
-          <li><svg class="icon"><use href="#i-check"/></svg><div><b data-i18n="why.4t">El código es tuyo</b><span data-i18n="why.4d">Propiedad intelectual 100% del cliente y documentación completa.</span></div></li>
-          <li><svg class="icon"><use href="#i-check"/></svg><div><b data-i18n="why.5t">Comunicación bilingüe</b><span data-i18n="why.5d">Equipos que trabajan con fluidez en español e inglés.</span></div></li>
-        </ul>
-        <div class="values">
-          <div class="value"><svg class="icon"><use href="#i-shield"/></svg><span data-i18n="val.1">Excelencia técnica</span></div>
-          <div class="value"><svg class="icon"><use href="#i-eye"/></svg><span data-i18n="val.2">Transparencia</span></div>
-          <div class="value"><svg class="icon"><use href="#i-heart"/></svg><span data-i18n="val.3">Cercanía</span></div>
-          <div class="value"><svg class="icon"><use href="#i-bulb"/></svg><span data-i18n="val.4">Innovación responsable</span></div>
-        </div>
+      <div class="about-stats">
+        <div><b>40+</b><span data-i18n="ab.s1">ingenieros y especialistas</span></div>
+        <div><b>70%</b><span data-i18n="ab.s2">perfiles senior (+5 años)</span></div>
+        <div><b>100%</b><span data-i18n="ab.s3">del equipo usa IA a diario</span></div>
+        <div><b>GMT-5</b><span data-i18n="ab.s4">mismo horario que EE.UU.</span></div>
       </div>
-    </div>
-
-    <p class="stack-title reveal" data-i18n="stack.title">Tecnologías que dominamos</p>
-    <div class="stack reveal">
-      <span class="chip">React</span><span class="chip">Angular</span><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">.NET</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">Flutter</span><span class="chip">React Native</span><span class="chip">PostgreSQL</span><span class="chip">SQL Server</span><span class="chip">MongoDB</span><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Google Cloud</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== TESTIMONIOS ===================== -->
-<section class="section" id="testimonios">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="t.eyebrow">Testimonios</span>
-      <h2 data-i18n="t.title">Lo que dicen nuestros clientes</h2>
-    </div>
-    <div class="cards">
-      <figure class="card quote reveal">
-        <div class="stars" aria-label="5/5">★★★★★</div>
-        <blockquote data-i18n="t1.q">“DB Tech entendió nuestra operación mejor que muchos de nuestros propios proveedores. La plataforma de rastreo cambió por completo la forma en que despachamos.”</blockquote>
-        <figcaption class="person"><span class="avatar av-1">LR</span><div><b>Laura Restrepo</b><span data-i18n="t1.r">Gerente de Operaciones, Andina Logística</span></div></figcaption>
-      </figure>
-      <figure class="card quote reveal">
-        <div class="stars" aria-label="5/5">★★★★★</div>
-        <blockquote data-i18n="t2.q">“Cumplieron cada fecha de entrega y la comunicación fue impecable. Ya van tres proyectos juntos y seguimos creciendo con ellos.”</blockquote>
-        <figcaption class="person"><span class="avatar av-2">CM</span><div><b>Carlos Mejía</b><span data-i18n="t2.r">CEO, FinCo Capital</span></div></figcaption>
-      </figure>
-      <figure class="card quote reveal">
-        <div class="stars" aria-label="5/5">★★★★★</div>
-        <blockquote data-i18n="t3.q">“Su equipo nearshore se integró al nuestro desde el primer día. Calidad de ingeniería de primer nivel, en nuestro mismo horario.”</blockquote>
-        <figcaption class="person"><span class="avatar av-3">MT</span><div><b>Michael Turner</b><span data-i18n="t3.r">CTO, Northbridge Health (EE.UU.)</span></div></figcaption>
-      </figure>
     </div>
   </div>
 </section>
 
 <!-- ===================== FAQ ===================== -->
-<section class="section alt" id="faq">
+<section class="section" id="faq">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
+      <p class="mono-label" data-i18n="faq.label">// 07 · PREGUNTAS FRECUENTES</p>
       <h2 data-i18n="faq.title">Resolvemos tus dudas</h2>
     </div>
     <div class="faq reveal">
-      <details><summary data-i18n="f1.q">¿Cuánto cuesta desarrollar un proyecto?</summary><p data-i18n="f1.a">Depende del alcance, la complejidad y los tiempos. Tras una sesión de descubrimiento gratuita te entregamos una propuesta detallada con costo fijo o por equipo dedicado, sin compromiso.</p></details>
-      <details><summary data-i18n="f2.q">¿Cuánto tiempo toma?</summary><p data-i18n="f2.a">Un MVP suele estar listo en 8 a 12 semanas. Proyectos más grandes se entregan por fases para que obtengas valor desde las primeras semanas.</p></details>
-      <details><summary data-i18n="f3.q">¿Trabajan con empresas fuera de Colombia?</summary><p data-i18n="f3.a">Sí. Atendemos clientes en Latinoamérica, Estados Unidos y España, trabajando en español o inglés y en husos horarios compatibles.</p></details>
-      <details><summary data-i18n="f4.q">¿De quién es el código fuente?</summary><p data-i18n="f4.a">Tuyo. Al finalizar cada etapa transferimos el código, la documentación y los accesos. La propiedad intelectual es 100% del cliente.</p></details>
-      <details><summary data-i18n="f5.q">¿Ofrecen soporte después del lanzamiento?</summary><p data-i18n="f5.a">Sí, con planes de soporte y mantenimiento mensuales que incluyen monitoreo, corrección de errores, actualizaciones de seguridad y nuevas funcionalidades.</p></details>
+      <details class="glass"><summary data-i18n="f1.q">¿Mis datos están seguros si usamos IA?</summary><p data-i18n="f1.a">Sí. Usamos versiones empresariales de los modelos, que no se entrenan con tu información. Cuando el caso lo requiere, desplegamos modelos en tu propia nube o infraestructura privada, con cifrado, control de accesos y registros de auditoría.</p></details>
+      <details class="glass"><summary data-i18n="f2.q">¿Qué modelos de IA utilizan?</summary><p data-i18n="f2.a">Trabajamos con Claude, GPT, Gemini, Llama y Mistral, entre otros. Evaluamos cada caso con métricas de calidad, costo y latencia, y elegimos el modelo más adecuado, sin depender de un solo proveedor.</p></details>
+      <details class="glass"><summary data-i18n="f3.q">¿Cuánto cuesta un proyecto de IA?</summary><p data-i18n="f3.a">Depende del alcance. Empezamos con un diagnóstico gratuito y, si tiene sentido, una prueba de concepto de 2 a 4 semanas con un costo acotado, para validar el retorno antes de escalar.</p></details>
+      <details class="glass"><summary data-i18n="f4.q">¿La IA reemplaza a los desarrolladores?</summary><p data-i18n="f4.a">No. La IA multiplica la productividad de nuestros ingenieros, pero cada decisión de arquitectura, cada revisión y cada entrega pasa por personas expertas. Ese equilibrio es lo que nos permite ser rápidos sin sacrificar calidad.</p></details>
+      <details class="glass"><summary data-i18n="f5.q">¿De quién es el código y la propiedad intelectual?</summary><p data-i18n="f5.a">Tuya. Transferimos el código fuente, la documentación, los prompts y los accesos. La propiedad intelectual de los desarrollos a la medida es 100% del cliente.</p></details>
+      <details class="glass"><summary data-i18n="f6.q">¿Trabajan con empresas fuera de Colombia?</summary><p data-i18n="f6.a">Sí. Atendemos clientes en Latinoamérica, Estados Unidos y España, en español o inglés y en husos horarios compatibles.</p></details>
     </div>
   </div>
 </section>
@@ -362,18 +531,18 @@
 <section class="section" id="contacto">
   <div class="container contact-wrap">
     <div class="contact-info reveal">
-      <span class="eyebrow" data-i18n="contact.eyebrow">Contacto</span>
-      <h2 data-i18n="contact.title">Hablemos de tu proyecto</h2>
-      <p class="lead" data-i18n="contact.lead">Cuéntanos qué tienes en mente. Un especialista te contactará en menos de 24 horas hábiles para agendar una consultoría gratuita.</p>
+      <p class="mono-label" data-i18n="contact.label">// 08 · CONTACTO</p>
+      <h2 data-i18n="contact.title">Llevemos tu empresa <span class="gradient-text">a la era de la IA</span></h2>
+      <p class="lead" data-i18n="contact.lead">Cuéntanos tu reto. En menos de 24 horas hábiles un especialista te contactará para agendar un diagnóstico de IA gratuito.</p>
       <ul class="info-list">
-        <li><span class="card-icon"><svg class="icon"><use href="#i-mail"/></svg></span><div><small data-i18n="contact.email">Correo</small><a href="mailto:contacto@dbtechsoftware.com" class="js-email">contacto@dbtechsoftware.com</a></div></li>
+        <li><span class="card-icon"><svg class="icon"><use href="#i-mail"/></svg></span><div><small data-i18n="contact.email">Correo</small><a href="mailto:contacto@dbtechsoftware.com">contacto@dbtechsoftware.com</a></div></li>
         <li><span class="card-icon"><svg class="icon"><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><a href="#" class="js-wa" target="_blank" rel="noopener">+57 300 000 0000</a></div></li>
         <li><span class="card-icon"><svg class="icon"><use href="#i-pin"/></svg></span><div><small data-i18n="contact.loc">Ubicación</small><b data-i18n="contact.locV">Colombia · Clientes en toda América</b></div></li>
         <li><span class="card-icon"><svg class="icon"><use href="#i-clock"/></svg></span><div><small data-i18n="contact.hours">Horario</small><b data-i18n="contact.hoursV">Lun – Vie · 8:00 a 18:00 (GMT-5)</b></div></li>
       </ul>
     </div>
 
-    <div class="form-card reveal">
+    <div class="form-card glass glow-border reveal">
       <form id="contactForm" action="#contacto" method="post" novalidate>
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-grid">
@@ -399,12 +568,14 @@
             <label for="f-service"><span data-i18n="form.service">Servicio de interés</span> <span class="req">*</span></label>
             <select id="f-service" name="service" required>
               <option value="" data-i18n="form.select">Selecciona una opción</option>
-              <option value="web" data-i18n="s1.t">Desarrollo web a la medida</option>
-              <option value="mobile" data-i18n="s2.t">Aplicaciones móviles</option>
-              <option value="cloud" data-i18n="s3.t">Cloud y DevOps</option>
-              <option value="integrations" data-i18n="s4.t">Integraciones y APIs</option>
-              <option value="data-ai" data-i18n="s5.t">Datos e inteligencia artificial</option>
-              <option value="consulting" data-i18n="s6.t">Consultoría y equipos dedicados</option>
+              <option value="ai-agents" data-i18n="sv.1t">Agentes de IA y automatización inteligente</option>
+              <option value="genai-rag" data-i18n="sv.2t">IA generativa con tus datos (RAG)</option>
+              <option value="web-mobile" data-i18n="sv.3t">Desarrollo web y móvil</option>
+              <option value="cloud" data-i18n="sv.4t">Cloud, DevOps y LLMOps</option>
+              <option value="data" data-i18n="sv.5t">Datos y analítica predictiva</option>
+              <option value="integrations" data-i18n="sv.6t">Integraciones y APIs</option>
+              <option value="ai-consulting" data-i18n="sv.7t">Consultoría y adopción de IA</option>
+              <option value="product" data-i18n="form.product">Un producto: DB Agents, DocAI, Assist o Insights</option>
               <option value="other" data-i18n="form.other">Otro</option>
             </select>
             <span class="err" data-i18n="form.errService">Selecciona un servicio.</span>
@@ -422,7 +593,7 @@
           </div>
           <div class="field full">
             <label for="f-msg"><span data-i18n="form.msg">Cuéntanos sobre tu proyecto</span> <span class="req">*</span></label>
-            <textarea id="f-msg" name="message" required minlength="10" maxlength="3000" data-i18n-ph="form.msgPh" placeholder="¿Qué quieres construir? ¿Qué problema quieres resolver?"></textarea>
+            <textarea id="f-msg" name="message" required minlength="10" maxlength="3000" data-i18n-ph="form.msgPh" placeholder="¿Qué proceso quieres automatizar o qué producto quieres construir?"></textarea>
             <span class="err" data-i18n="form.errMsg">Cuéntanos un poco más (mínimo 10 caracteres).</span>
           </div>
           <div class="field full">
@@ -444,10 +615,17 @@
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer">
   <div class="container">
+    <div class="footer-cta glass glow-border reveal">
+      <div>
+        <h3 data-i18n="fcta.t">¿Listo para construir el futuro de tu empresa?</h3>
+        <p data-i18n="fcta.d">Diagnóstico de IA sin costo y sin compromiso.</p>
+      </div>
+      <a href="#contacto" class="btn btn-primary"><span data-i18n="nav.cta">Hablemos</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
     <div class="footer-grid">
       <div>
-        <a href="#top" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M14 22 7 32l7 10M50 22l7 10-7 10" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><text x="32" y="41" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="-1">DB</text></svg><span>DB Tech<small>Software</small></span></a>
-        <p data-i18n="footer.tag">Software a la medida, cloud e inteligencia artificial para empresas que quieren crecer. Hecho con orgullo en Colombia.</p>
+        <a href="#top" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#lg)" stroke-width="3"/><path d="M15 22 8 32l7 10M49 22l7 10-7 10" stroke="url(#lg)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="32" y="41" class="brand-mark-text" text-anchor="middle">DB</text></svg><span class="brand-name">DB Tech<small>Software</small></span></a>
+        <p data-i18n="footer.tag">Empresa de software AI-native. Agentes de IA, IA generativa, desarrollo web y móvil, y cloud. Hecho con orgullo en Colombia.</p>
         <div class="socials">
           <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
           <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
@@ -456,20 +634,20 @@
       </div>
       <div>
         <h4 data-i18n="footer.company">Empresa</h4>
-        <ul><li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li><li><a href="#casos" data-i18n="nav.cases">Casos de éxito</a></li><li><a href="#proceso" data-i18n="nav.process">Proceso</a></li><li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li></ul>
+        <ul><li><a href="#ia" data-i18n="footer.ai">Cómo usamos la IA</a></li><li><a href="#casos" data-i18n="footer.cases">Casos de éxito</a></li><li><a href="#nosotros" data-i18n="footer.about">Nosotros</a></li><li><a href="#faq" data-i18n="footer.faq">Preguntas frecuentes</a></li></ul>
       </div>
       <div>
-        <h4 data-i18n="nav.services">Servicios</h4>
-        <ul><li><a href="#servicios" data-i18n="fs.1">Desarrollo web</a></li><li><a href="#servicios" data-i18n="fs.2">Apps móviles</a></li><li><a href="#servicios">Cloud & DevOps</a></li><li><a href="#servicios" data-i18n="fs.4">Datos e IA</a></li></ul>
+        <h4 data-i18n="nav.products">Productos</h4>
+        <ul><li><a href="#productos">DB Agents</a></li><li><a href="#productos">DB DocAI</a></li><li><a href="#productos">DB Assist</a></li><li><a href="#productos">DB Insights</a></li></ul>
       </div>
       <div>
         <h4 data-i18n="nav.contact">Contacto</h4>
-        <ul><li><a href="mailto:contacto@dbtechsoftware.com" class="js-email">contacto@dbtechsoftware.com</a></li><li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="#privacidad" id="privacidad" data-i18n="footer.privacy">Política de privacidad</a></li></ul>
+        <ul><li><a href="mailto:contacto@dbtechsoftware.com">contacto@dbtechsoftware.com</a></li><li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="#privacidad" id="privacidad" data-i18n="footer.privacy">Política de privacidad</a></li></ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> DB Tech Software S.A.S. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
-      <span data-i18n="footer.made">Hecho con ♥ en Colombia 🇨🇴</span>
+      <span class="mono" data-i18n="footer.made">&lt;/&gt; con IA + ♥ en Colombia 🇨🇴</span>
     </div>
   </div>
 </footer>
