@@ -1,4 +1,4 @@
-# Seguridad: dbtechsoftware.com
+# Seguridad: dvtechsoftware.com
 
 ## Resumen
 
@@ -55,14 +55,14 @@ Hazlo después de que el dominio esté activo en Cloudflare (ver `DEPLOY.md`).
 - **DNS → Settings → DNSSEC:** **Enable**. Copia el registro *DS* que te da Cloudflare y pégalo en el panel de tu registrador. Esto evita que alguien falsifique las respuestas DNS de tu dominio.
 - **Registro CAA** (solo Cloudflare puede emitir certificados para tu dominio). Cloudflare los gestiona automáticamente al tener Universal SSL. Si agregas CAA manuales, incluye las autoridades que Cloudflare indica.
 
-### Correo (evitar que suplanten @dbtechsoftware.com)
+### Correo (evitar que suplanten @dvtechsoftware.com)
 Email Routing agrega SPF automáticamente. Agrega además un registro **DMARC**:
 
 | Tipo | Nombre | Contenido |
 |---|---|---|
-| TXT | `_dmarc` | `v=DMARC1; p=quarantine; rua=mailto:contacto@dbtechsoftware.com` |
+| TXT | `_dmarc` | `v=DMARC1; p=quarantine; rua=mailto:contacto@dvtechsoftware.com` |
 
-Si nunca vas a **enviar** correos desde `@dbtechsoftware.com`, puedes subirlo a `p=reject` al cabo de unas semanas. Si luego configuras "Enviar como" con Brevo u otro SMTP, agrega primero su SPF/DKIM.
+Si nunca vas a **enviar** correos desde `@dvtechsoftware.com`, puedes subirlo a `p=reject` al cabo de unas semanas. Si luego configuras "Enviar como" con Brevo u otro SMTP, agrega primero su SPF/DKIM.
 
 ---
 
@@ -79,7 +79,7 @@ Un atacante no necesita "hackear" un sitio estático si puede entrar a la cuenta
 - [ ] **Renovación automática del dominio** activada. Un dominio vencido puede ser comprado por otra persona.
 - [ ] Contraseñas únicas y largas, guardadas en un gestor de contraseñas.
 - [ ] Guarda los **códigos de recuperación** de 2FA en un lugar seguro, fuera del computador.
-- [ ] En Web3Forms, restringe el formulario al dominio `dbtechsoftware.com`.
+- [ ] En Web3Forms, restringe el formulario al dominio `dvtechsoftware.com`.
 - [ ] Si más personas administran el sitio, dales acceso con **sus propias cuentas** (miembros en Cloudflare o colaboradores en GitHub). Nunca compartan la contraseña.
 
 ---
@@ -88,8 +88,8 @@ Un atacante no necesita "hackear" un sitio estático si puede entrar a la cuenta
 
 | Herramienta | Qué revisar | Meta |
 |---|---|---|
-| <https://securityheaders.com/?q=dbtechsoftware.com> | Cabeceras de seguridad | **A** o **A+** |
-| <https://www.ssllabs.com/ssltest/analyze.html?d=dbtechsoftware.com> | Configuración SSL/TLS | **A** o **A+** |
+| <https://securityheaders.com/?q=dvtechsoftware.com> | Cabeceras de seguridad | **A** o **A+** |
+| <https://www.ssllabs.com/ssltest/analyze.html?d=dvtechsoftware.com> | Configuración SSL/TLS | **A** o **A+** |
 | <https://observatory.mozilla.org> | Revisión general | **A** o superior |
 | <https://dnsviz.net> | DNSSEC | Cadena válida (en verde) |
 | <https://hstspreload.org> | Elegibilidad para precarga HSTS | Opcional (ver nota) |

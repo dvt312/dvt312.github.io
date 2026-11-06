@@ -6,7 +6,7 @@ const CONFIG = {
   // Llave de acceso de https://web3forms.com (gratis). Mientras diga "YOUR_..."
   // el formulario funciona en MODO DEMO (simula el envío, no manda correo).
   web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY",
-  contactEmail: "contacto@dbtechsoftware.com",
+  contactEmail: "contacto@dvtechsoftware.com",
   whatsapp: "573000000000",         // Formato internacional sin "+" ni espacios
   minFillSeconds: 4,                // Anti-bot: un humano tarda más que esto en llenar el formulario
   cooldownSeconds: 60               // Anti-abuso: tiempo mínimo entre envíos desde el mismo navegador
