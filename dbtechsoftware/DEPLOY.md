@@ -1,6 +1,21 @@
 # Guía de despliegue: dbtechsoftware.com
 
-El sitio es **un solo archivo estático** (`index.html`), sin servidor ni base de datos. No necesita un hosting pagado.
+El sitio es **estático**, sin servidor ni base de datos. No necesita un hosting pagado ni comprar un certificado SSL: Cloudflare lo da gratis y lo renueva solo.
+
+```
+dbtechsoftware/
+├── index.html              ← la página
+├── _headers                ← cabeceras de seguridad (CSP, HSTS…) que aplica Cloudflare
+├── favicon.svg, robots.txt, sitemap.xml
+├── .well-known/security.txt
+└── assets/
+    ├── css/styles.css      ← estilos y colores de los temas
+    ├── js/theme-init.js    ← aplica tema/idioma antes de pintar
+    ├── js/app.js           ← CONFIG, traducciones al inglés y formulario
+    └── fonts/              ← fuentes alojadas en el propio sitio
+```
+
+> 🔒 **Seguridad:** lee también [`SEGURIDAD.md`](SEGURIDAD.md). Explica las protecciones incluidas y cómo configurar Cloudflare contra ataques y DDoS.
 
 ## Arquitectura recomendada (costo: USD 0 al mes)
 
@@ -38,7 +53,7 @@ Solo sigues pagando la renovación anual del dominio con tu registrador actual.
 ## Paso 3: activar el formulario (Web3Forms)
 
 1. Entra a <https://web3forms.com>, escribe `contacto@dbtechsoftware.com` y pide tu **Access Key**. Llega a ese correo, que gracias al alias termina en tu bandeja.
-2. Abre `index.html`, busca el bloque `CONFIG` al inicio del `<script>` final y reemplaza el valor:
+2. Abre `assets/js/app.js`, busca el bloque `CONFIG` al inicio y reemplaza los valores:
    ```js
    const CONFIG = {
      web3formsKey: "PEGA-AQUÍ-TU-ACCESS-KEY",
@@ -55,12 +70,16 @@ Solo sigues pagando la renovación anual del dominio con tu registrador actual.
 
 **Opción A, sin Git (la más rápida):**
 1. Cloudflare → **Workers & Pages → Create → Pages → Upload assets**.
-2. Nombre del proyecto: `dbtechsoftware`. Arrastra la carpeta que contiene `index.html` y pulsa **Deploy**.
+2. Nombre del proyecto: `dbtechsoftware`. Arrastra **la carpeta `dbtechsoftware` completa** y pulsa **Deploy**.
 3. Queda publicado en `https://dbtechsoftware.pages.dev`.
+4. Verifica que `https://dbtechsoftware.pages.dev/.well-known/security.txt` abre. Algunos sistemas operativos ocultan las carpetas que empiezan por punto; si no aparece, usa la Opción B.
 
 **Opción B, con GitHub (cada `git push` actualiza el sitio):**
 1. Sube la carpeta a un repositorio, por ejemplo `dbtechsoftware-web`.
-2. **Workers & Pages → Create → Pages → Connect to Git**, elige el repositorio y usa: *Framework preset* = None, *Build command* = (vacío), *Output directory* = `/`.
+2. **Workers & Pages → Create → Pages → Connect to Git**, elige el repositorio y usa:
+   - *Framework preset* = None.
+   - *Build command* = (vacío).
+   - *Build output directory* = `dbtechsoftware`, la carpeta donde está `index.html`.
 
 ## Paso 5: conectar el dominio
 
@@ -71,6 +90,8 @@ Solo sigues pagando la renovación anual del dominio con tu registrador actual.
 ## Paso 6: lista de verificación final
 
 - [ ] `https://dbtechsoftware.com` carga con el candado HTTPS.
+- [ ] Completaste la configuración de Cloudflare y la seguridad de cuentas de `SEGURIDAD.md`.
+- [ ] <https://securityheaders.com> da nota **A** o superior.
 - [ ] Los botones ES/EN y el selector de temas funcionan. `?lang=en` abre el sitio directamente en inglés.
 - [ ] El formulario envía y el correo llega a tu bandeja (revisa también Spam la primera vez).
 - [ ] El botón de WhatsApp abre el chat con tu número real.
@@ -80,8 +101,9 @@ Solo sigues pagando la renovación anual del dominio con tu registrador actual.
 
 ## Personalización rápida
 
-- **Logo:** en `index.html` busca el comentario `LOGO:` y reemplaza el `<svg>` por `<img src="logo.svg" class="brand-mark" alt="">`. Haz lo mismo en el footer y pon el archivo `logo.svg` junto a `index.html`. El favicon es el `<link rel="icon">` del `<head>`.
+- **Logo:** en `index.html` busca el comentario `LOGO:` y reemplaza el `<svg>` por `<img src="logo.svg" class="brand-mark" alt="">`. Haz lo mismo en el footer y pon el archivo `logo.svg` junto a `index.html`. El favicon está en `favicon.svg`.
 - **Textos en español:** edítalos directamente en el HTML.
-- **Textos en inglés:** edítalos en el objeto `EN` del script, con la misma clave `data-i18n`.
-- **Colores de los temas:** variables CSS al inicio del `<style>` (`[data-theme="light"]`, `dark`, `ocean`, `sunset`).
+- **Textos en inglés:** edítalos en el objeto `EN` de `assets/js/app.js`, con la misma clave `data-i18n`.
+- **Colores de los temas:** variables al inicio de `assets/css/styles.css` (`[data-theme="light"]`, `dark`, `ocean`, `sunset`).
+- **Regla de seguridad:** no agregues `<script>` ni `style="…"` dentro del HTML; la CSP los bloquea. Pon todo en `assets/`.
 - **Contenido de ejemplo:** las cifras, los clientes, los casos y los testimonios son inventados. Cámbialos por datos reales antes de lanzar o en cuanto los tengas.
